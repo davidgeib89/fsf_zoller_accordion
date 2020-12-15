@@ -1,0 +1,28 @@
+{
+    "name": "freesixtyfive/fsf-zoller-accordion",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "David Geib",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FREESIXTYFIVE\\FsfZollerAccordion\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FREESIXTYFIVE\\FsfZollerAccordion\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "freesixtyfive/fsf-zoller-accordion": "self.version",
+        "typo3-ter/fsf-zoller-accordion": "self.version"
+    }
+}

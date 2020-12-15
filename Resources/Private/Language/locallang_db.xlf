@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:fsf_zoller_accordion/Resources/Private/Language/locallang_db" date="2020-12-14T16:17:09Z" product-name="fsf_zoller_accordion">
+		<header/>
+		<body>
+			<trans-unit id="tx_fsfzolleraccordion_domain_model_accordion" resname="tx_fsfzolleraccordion_domain_model_accordion">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="tx_fsf_zoller_accordion_zolleraccordion.name" resname="tx_fsf_zoller_accordion_zolleraccordion.name">
+				<source>Zoller Akkordeon </source>
+			</trans-unit>
+			<trans-unit id="tx_fsf_zoller_accordion_zolleraccordion.description" resname="tx_fsf_zoller_accordion_zolleraccordion.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
