@@ -57,3 +57,14 @@ plugin.tx_fsfzolleraccordion._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+page{
+	includeCSS{
+		fsfzolleraccordion =  EXT:fsf_zoller_accordion/Resources/Public/css/fsf_zoller_accordion.css
+      
+	}
+	includeJSFooterlibs {
+        fsfzolleraccordionjs =  EXT:fsf_zoller_accordion/Resources/Public/js/main.js
+    }
+}
+

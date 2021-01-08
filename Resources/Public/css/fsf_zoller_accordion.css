@@ -1,0 +1,124 @@
+/*faq start*/
+.headline-accordeon {
+	display: block;
+	color:black;
+}
+
+.accordion > .card > .card-header {
+    padding-bottom: 15px;
+    padding-top: 22px;
+    border-top: 1px solid #dadada;
+}
+
+.card-body {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/*accordion*/
+.card {
+    border: 0;
+}
+
+.card-header {
+    padding: 0.75rem 0rem;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    padding: 0;
+}
+.accordion > .card > .card-header {
+    padding-bottom: 0;
+}
+
+.mb-0 {
+    padding-right: 25px;
+}
+
+#p-1 {
+    margin-top: 15px;
+}
+
+#still-available {
+    margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+    #still-available {
+        margin-top: 15px;
+        margin-bottom: 80px;
+    }
+}
+
+#register-thanks {
+    display: none;
+    margin-bottom: 100px;
+    padding: 100px 0;
+}
+
+.card-header a[aria-expanded="false"] .headline-accordeon::after {
+    pointer-events: none;
+    display: block;
+    width: 20px;
+    height: 12px;
+    content: url(../img/arrow_down.png);
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.card-header a[aria-expanded="true"] .headline-accordeon::after {
+    pointer-events: none;
+    display: block;
+    width: 20px;
+    height: 12px;
+    content: url(../img/arrow_up.png);
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.accordion > .card > .card-header {
+	padding-bottom: 25px;
+    padding-top: 30px;
+    border-top: 1px solid #dadada;
+}
+
+.card-body {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.headline-accordeon {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+	padding-right: 30px;
+	font-size:2rem;
+}
+
+.card a:not(.btn):hover {
+    color: #000000;
+}
+
+.fsf-zoller-accordion .left-accordion p {
+	font-size:2rem;
+}
+
+.fsf-zoller-accordion .accordion-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.fsf-zoller-accordion .accordion-video {
+    max-width: 100%;
+    height: auto;
+}
+
+.fsf-zoller-accordion {
+    margin-bottom: 150px!important;
+}
+
+/*accordion*/

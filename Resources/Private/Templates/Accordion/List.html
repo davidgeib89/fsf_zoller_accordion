@@ -1,36 +1,88 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
+<div class="container fsf-zoller-accordion">
+    <div class="row">
+        <div class="col-xl-5 col-12 left-accordion">
+            <h1>{settings.headline}</h1>
+            <f:format.html>{settings.text}</f:format.html>
+            <f:if condition="{settings.img}">
+                <f:image
+                    class="accordion-image"
+                    src="/uploads/tx_fsfzolleraccordion/{settings.img}"
+                />
+            </f:if>
+            <f:if condition="{settings.video}"> 
+                <video controls class="accordion-video">
+                    <source src="/uploads/tx_fsfzolleraccordion/{settings.video}" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+            </f:if>
+        </div>
+        <div class="col-xl-7 col-12">
+            <div
+                class="accordion md-accordion"
+                id="accordionEx"
+                role="tablist"
+                aria-multiselectable="true"
+            >
+                <f:for
+                    each="{settings.references}"
+                    as="reference"
+                    key="key"
+                    iteration="iterator"
+                >
+                    <div class="card">
+                        <!-- Card header -->
+                        <div
+                            class="card-header"
+                            role="tab"
+                            id="heading{iterator.index}"
+                        >
+                            <a
+                                data-toggle="collapse"
+                                data-parent="#accordionEx"
+                                href="#collapse{iterator.index}"
+                                aria-expanded="false"
+                                class="colappsed collapsed"
+                                aria-controls="collapse{iterator.index}"
+                            >
+                                <h6 class="headline-accordeon bold">
+                                    {reference.item.headline}
+                                    <i
+                                        class="fas fa-angle-down rotate-icon"
+                                    ></i>
+                                </h6>
+                            </a>
+                        </div>
 
-This Template is responsible for creating a table of domain objects.
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        List.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
-
-<f:section name="content">
-    <h1>Listing for Accordion</h1>
-
-    <f:flashMessages />
-
-    <table  class="tx_fsfzolleraccordion" >
-        <tr>
-            <th> </th>
-            <th> </th>
-        </tr>
-
-        <f:for each="{accordions}" as="accordion">
-            <tr>
-                <td><f:link.action action="edit" arguments="{accordion : accordion}">Edit</f:link.action></td>
-                <td><f:link.action action="delete" arguments="{accordion : accordion}">Delete</f:link.action></td>
-            </tr>
-        </f:for>
-    </table>
-
-    <f:link.action action="new">New Accordion</f:link.action>
-</f:section>
-</html>
+                        <!-- Card body -->
+                        <div
+                            id="collapse{iterator.index}"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading{iterator.index}"
+                            data-parent="#accordionEx"
+                            style=""
+                        >
+                            <div class="card-body">
+                                <f:format.html>
+                                    {reference.item.text}</f:format.html
+                                >
+                                <f:if condition="{reference.item.img}">
+                                    <f:image
+                                        class="accordion-image"
+                                        src="/uploads/tx_fsfzolleraccordion/{reference.item.img}"
+                                    />
+                                </f:if>
+                                <f:if condition="{reference.item.video}">
+                                    <video controls class="accordion-video">
+                                        <source src="/uploads/tx_fsfzolleraccordion/{reference.item.video}" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>
+        </div>
+    </div>
+</div>
