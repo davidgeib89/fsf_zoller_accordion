@@ -1,5 +1,5 @@
 <div class="container fsf-zoller-accordion">
-    <div class="row">
+    <div id="{rand}" class="row">
         <div class="col-xl-5 col-12 left-accordion">
             <h1>{settings.headline}</h1>
             <f:format.html>{settings.text}</f:format.html>
@@ -19,7 +19,7 @@
         <div class="col-xl-7 col-12">
             <div
                 class="accordion md-accordion"
-                id="accordionEx"
+                id="accordionEx-{rand}"
                 role="tablist"
                 aria-multiselectable="true"
             >
@@ -34,15 +34,15 @@
                         <div
                             class="card-header"
                             role="tab"
-                            id="heading{iterator.index}"
+                            id="heading-{iterator.index}-{rand}"
                         >
                             <a
                                 data-toggle="collapse"
-                                data-parent="#accordionEx"
-                                href="#collapse{iterator.index}"
+                                data-parent="#accordionEx-{rand}"
+                                href="#collapse-{iterator.index}-{rand}"
                                 aria-expanded="false"
                                 class="colappsed collapsed"
-                                aria-controls="collapse{iterator.index}"
+                                aria-controls="collapse-{iterator.index}"
                             >
                                 <h6 class="headline-accordeon">
                                     {reference.item.headline}
@@ -55,11 +55,11 @@
 
                         <!-- Card body -->
                         <div
-                            id="collapse{iterator.index}"
+                            id="collapse-{iterator.index}-{rand}"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading{iterator.index}"
-                            data-parent="#accordionEx"
+                            aria-labelledby="heading-{iterator.index}-{rand}"
+                            data-parent="#accordionEx-{rand}"
                             style=""
                         >
                             <div class="card-body">

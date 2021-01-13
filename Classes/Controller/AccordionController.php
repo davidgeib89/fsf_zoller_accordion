@@ -42,6 +42,6 @@ class AccordionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
     {
         $accordions = $this->accordionRepository->findAll();
         $this->view->assign('accordions', $accordions);
-        $this->view->assign('rand', md5(rand() + rand()));
+        $this->view->assign('rand', rand(1,999));
     }
 }
