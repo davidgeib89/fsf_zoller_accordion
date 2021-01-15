@@ -41,7 +41,7 @@ call_user_func(
 			$iconRegistry->registerIcon(
 				'fsf_zoller_accordion-plugin-zolleraccordion',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:fsf_zoller_accordion/Resources/Public/Icons/user_plugin_zolleraccordion.svg']
+				['source' => 'EXT:fsf_zoller_accordion/Resources/Public/Icons/zoller_z.svg']
 			);
 		
     }

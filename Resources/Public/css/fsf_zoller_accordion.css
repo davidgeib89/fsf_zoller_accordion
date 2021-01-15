@@ -96,16 +96,12 @@
     position: relative;
     margin-bottom: 5px;
 	padding-right: 30px;
-	font-size:2rem;
 }
 
 .card a:not(.btn):hover {
     color: #000000;
 }
 
-.fsf-zoller-accordion .left-accordion p {
-	font-size:2rem;
-}
 
 .fsf-zoller-accordion .accordion-image {
     max-width: 100%;
@@ -123,6 +119,12 @@
 
 .fsf-zoller-accordion .headline-accordeon {
     font-weight: bold;
+}
+
+@media (max-width:1200px) {
+    .col-xl-5.col-12.left-accordion {
+        margin-bottom: 30px;
+    }
 }
 
 /*accordion*/
