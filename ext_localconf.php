@@ -24,7 +24,7 @@ call_user_func(
                     elements {
                         zolleraccordion {
                             iconIdentifier = fsf_zoller_accordion-plugin-zolleraccordion
-                            title = LLL:EXT:fsf_zoller_accordion/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_accordion_zolleraccordion.name
+                            title = Akkordeon
                             description = LLL:EXT:fsf_zoller_accordion/Resources/Private/Language/locallang_db.xlf:tx_fsf_zoller_accordion_zolleraccordion.description
                             tt_content_defValues {
                                 CType = list
