@@ -1,7 +1,7 @@
-<div class="container fsf-zoller-accordion">
+<div class="container fsf-zoller-accordion {f:if(condition: '{settings.distance} == \'distance\'', then: 'distance')}">
     <div id="{rand}" class="row">
         <div class="col-xl-5 col-12 left-accordion">
-            <h1>{settings.headline}</h1>
+            <h2>{settings.headline}</h2>
             <f:format.html>{settings.text}</f:format.html>
             <f:if condition="{settings.img}">
                 <f:image

@@ -15,6 +15,10 @@
     margin-bottom: 20px;
 }
 
+.fsf-zoller-accordion h2 {
+    font-size:3rem;
+}
+
 /*accordion*/
 .card {
     border: 0;
@@ -116,6 +120,9 @@
 .fsf-zoller-accordion {
     margin-bottom: 150px!important;
 }
+.fsf-zoller-accordion.distance {
+    margin-top: 150px!important;
+}
 
 .fsf-zoller-accordion .headline-accordeon {
     font-weight: bold;
@@ -124,6 +131,17 @@
 @media (max-width:1200px) {
     .col-xl-5.col-12.left-accordion {
         margin-bottom: 30px;
+    }
+    .fsf-zoller-accordion {
+        margin-bottom: 60px!important;
+    }
+
+    .fsf-zoller-accordion.distance {
+        margin-top: 60px!important;
+    }
+
+    .fsf-zoller-accordion h2 {
+        font-size:2rem;
     }
 }
 
