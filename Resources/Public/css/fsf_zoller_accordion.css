@@ -1,7 +1,7 @@
 /*faq start*/
 .headline-accordeon {
-	display: block;
-	color:black;
+    display: block;
+    color: black;
 }
 
 .accordion > .card > .card-header {
@@ -16,7 +16,17 @@
 }
 
 .fsf-zoller-accordion h2 {
-    font-size:3rem;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.fsf-zoller-accordion h3 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+    margin-bottom: 22px;
 }
 
 /*accordion*/
@@ -85,7 +95,7 @@
 }
 
 .accordion > .card > .card-header {
-	padding-bottom: 25px;
+    padding-bottom: 25px;
     padding-top: 30px;
     border-top: 1px solid #dadada;
 }
@@ -99,13 +109,12 @@
     display: block;
     position: relative;
     margin-bottom: 5px;
-	padding-right: 30px;
+    padding-right: 30px;
 }
 
 .card a:not(.btn):hover {
     color: #000000;
 }
-
 
 .fsf-zoller-accordion .accordion-image {
     max-width: 100%;
@@ -118,30 +127,28 @@
 }
 
 .fsf-zoller-accordion {
-    margin-bottom: 150px!important;
+    margin-bottom: 150px !important;
 }
 .fsf-zoller-accordion.distance {
-    margin-top: 150px!important;
+    margin-top: 150px !important;
 }
 
 .fsf-zoller-accordion .headline-accordeon {
     font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .col-xl-5.col-12.left-accordion {
         margin-bottom: 30px;
     }
     .fsf-zoller-accordion {
-        margin-bottom: 60px!important;
+        margin-bottom: 60px !important;
     }
 
     .fsf-zoller-accordion.distance {
-        margin-top: 60px!important;
-    }
-
-    .fsf-zoller-accordion h2 {
-        font-size:2rem;
+        margin-top: 60px !important;
     }
 }
 
